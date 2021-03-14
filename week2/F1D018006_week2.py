@@ -50,6 +50,7 @@ class MainWindows:
     text = self.textfield.text()
     self.res.setText("HELLO, "+text.upper()+"!")
 
+
 def main():
   app = MainWindows()
 
