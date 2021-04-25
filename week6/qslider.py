@@ -36,10 +36,11 @@ class Slider(QWidget):
         layout.addWidget(self.l1)
 
         self.sl = QSlider(Qt.Horizontal)
+        self.sl.setTickPosition(QSlider.TicksAbove)
         self.sl.setMinimum(___min)
         self.sl.setMaximum(___max)
         self.sl.setValue(___med)
-        self.sl.setTickPosition(QSlider.TicksAbove)
+        self.sl.setTickPosition(QSlider.TicksBelow)
         self.sl.setTickInterval(10)
 
         layout.addWidget(self.sl)
